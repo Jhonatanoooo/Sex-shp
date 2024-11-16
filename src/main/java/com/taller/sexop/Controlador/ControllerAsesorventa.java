@@ -40,36 +40,7 @@ public class ControllerAsesorventa {
     public List<Producto> listarProductos() {
         return serviceAsesor.listaProdustosAsesor();
     }
-    //Historial de asesores
-//    @GetMapping("/listaAsesores")
-//    public List<AsesorVentas> listaAsesorVentas(){
-//        return serviceAsesorVentas.getAsesorVentas();
-//    }
-//    //busqueda
-//    @PutMapping("/{id}")
-//    public AsesorVentas getAsesorVentas(@PathVariable UUID id){
-//        return serviceAsesorVentas.getAsesorVentasById(id).map(asesorVentas -> asesorVentas.getIdAsesor().equals(id) ? asesorVentas : null).orElse(null);
-//    }
-//
-//    @PostMapping("crearAsesor")
-//    public UUID crearAsesor(@RequestBody AsesorVentas asesorVentas) {
-//        return serviceAsesorVentas.crearAsesorVentas(asesorVentas.getNombre(), asesorVentas.getApellido(), asesorVentas.getCargo(), asesorVentas.getSalario());
-//    }
-//    //actualizacion de asesor
-//    @PutMapping("/actualizarAsesor/{id}")
-//    public boolean actualizarAsesor(@PathVariable UUID id, @RequestBody AsesorVentas asesorVentas) {
-//        return serviceAsesorVentas.actualizarAsesorVentas(
-//                id,
-//                asesorVentas.getNombre(),
-//                asesorVentas.getApellido(),
-//                asesorVentas.getCargo(),
-//                asesorVentas.getSalario()
-//        );
-//    }
-//    @DeleteMapping("/borrarAsesor/{id}")
-//    public void borrarAsesor(@PathVariable UUID id) {
-//        serviceAsesorVentas.eliminarAsesorVentas(id);
-//    }
+
 
 
 }
